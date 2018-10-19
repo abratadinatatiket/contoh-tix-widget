@@ -13,5 +13,11 @@ var int = setInterval(function() {
       background: 'lightblue',
       content: 'Halo, aku BANNER widget.'
     });
+
+    window.WidgetCore.create('w3', window.WidgetCore.types.BANNER, {
+      css: './tix-widget/styles/lime-banner.css',
+      className: 'tix-widget lime-banner',
+      content: 'Halo, aku LIME-BANNER widget.'
+    });
   }
 }, 100);

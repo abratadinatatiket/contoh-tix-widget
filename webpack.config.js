@@ -7,8 +7,9 @@ const BASE = {
   entry: {
     'widget.core': './tix-widget/widget.core.js',
     'widget.embed': './tix-widget/widget.embed.js',
-    'banner':'./tix-widget/styles/banner.scss',
-    'square':'./tix-widget/styles/square.scss'
+    'lime-banner':'./tix-widget/styles/lime-banner.scss',
+    'orange-skyscraper':'./tix-widget/styles/orange-skyscraper.scss',
+    'pink-square':'./tix-widget/styles/pink-square.scss'
   },
   output:{
     path: path.resolve(__dirname,'dist/tix-widget/'),

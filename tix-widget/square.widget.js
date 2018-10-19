@@ -12,13 +12,20 @@ export default class SquareWidget {
 
   render() {
     const el = document.createElement('div');
-    el.setAttribute(
-      'style',
-      `width:300px;height:300px;color:${this.opts.color};background:${
-        this.opts.background
-      }`
-    );
-    
+    el.setAttribute('class', this.opts.className || 'tix-widget banner');
+    if(!this.opts.css){
+      el.setAttribute(
+        'style',
+        `width:300px;height:300px;color:${this.opts.color};background:${
+          this.opts.background
+        }`
+      );
+    }else{
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = this.opts.css;
+      document.head.appendChild(link);
+    }
 
     el.insertAdjacentHTML('afterbegin', `<p>${this.opts.content}</p>`);
     

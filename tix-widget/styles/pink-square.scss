@@ -1,8 +1,8 @@
 .tix-widget{
-  .square{
+  &.pink-square{
     width: 200px;
     height:200px;
     color: white;
-    background: purple;
+    background: pink;
   }
 }

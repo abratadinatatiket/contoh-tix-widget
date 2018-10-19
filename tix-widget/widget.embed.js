@@ -9,7 +9,9 @@ for (let i = 0, len = pageScripts.length; i < len; i++) {
     const opts = {
       color: thisScript.getAttribute('data-color'),
       background: thisScript.getAttribute('data-background'),
-      content: thisScript.getAttribute('data-content')
+      content: thisScript.getAttribute('data-content'),
+      css: thisScript.getAttribute('data-css'),
+      className: thisScript.getAttribute('data-className')
     }    
     window.WidgetCore.create(thisScript.parentNode, type, opts);
   }
