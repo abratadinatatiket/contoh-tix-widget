@@ -1,3 +1,5 @@
+//import './styles/banner.scss';
+
 export default class BannerWidget {
   constructor(opts, parent) {
     this.opts = opts;
