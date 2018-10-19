@@ -15,7 +15,7 @@ export default class SkyscraperWidget {
     const el = document.createElement('div');
     el.setAttribute(
       'style',
-      `width:200;height:400px;color:${this.opts.color};background:${
+      `width:200px;height:400px;color:${this.opts.color};background:${
         this.opts.background
       }`
     );
