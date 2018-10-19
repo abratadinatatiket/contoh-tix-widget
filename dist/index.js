@@ -1,3 +1,4 @@
+//contoh widget consumer yg pake API utk bikin widget
 var int = setInterval(function() {
   if (window.WidgetCore) {
     clearInterval(int);
